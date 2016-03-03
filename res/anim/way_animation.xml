@@ -1,0 +1,27 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/pin_00000" android:duration="100" />
+    <item android:drawable="@drawable/pin_00001" android:duration="100" />
+    <item android:drawable="@drawable/pin_00002" android:duration="100" />
+    <item android:drawable="@drawable/pin_00003" android:duration="100" />
+    <item android:drawable="@drawable/pin_00004" android:duration="100" />
+    <item android:drawable="@drawable/pin_00005" android:duration="100" />
+    <item android:drawable="@drawable/pin_00006" android:duration="100" />
+    <item android:drawable="@drawable/pin_00007" android:duration="100" />
+    <item android:drawable="@drawable/pin_00008" android:duration="100" />
+    <item android:drawable="@drawable/pin_00009" android:duration="100" />
+    <item android:drawable="@drawable/pin_00010" android:duration="100" />
+    <item android:drawable="@drawable/pin_00011" android:duration="100" />
+    <item android:drawable="@drawable/pin_00012" android:duration="100" />
+    <item android:drawable="@drawable/pin_00013" android:duration="100" />
+    <item android:drawable="@drawable/pin_00014" android:duration="100" />
+    <item android:drawable="@drawable/pin_00015" android:duration="100" />
+    <item android:drawable="@drawable/pin_00016" android:duration="100" />
+    <item android:drawable="@drawable/pin_00017" android:duration="100" />
+    <item android:drawable="@drawable/pin_00018" android:duration="100" />
+    <item android:drawable="@drawable/pin_00019" android:duration="100" />
+    <item android:drawable="@drawable/pin_00020" android:duration="100" />
+    <item android:drawable="@drawable/pin_00021" android:duration="100" />
+    <item android:drawable="@drawable/pin_00022" android:duration="100" />
+   
+</animation-list>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.smxcwz.qiongyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContentActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/tabNva_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tag_bg"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.smxcwz.qiongyou.view.ChengeColorIconWithText
+            android:id="@+id/tabNva_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            hyman:icon="@drawable/ic_bottom_nav_discover"
+            hyman:text="推荐"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" >
+        </com.smxcwz.qiongyou.view.ChengeColorIconWithText>
+
+        <com.smxcwz.qiongyou.view.ChengeColorIconWithText
+            android:id="@+id/tabNva_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            hyman:icon="@drawable/ic_bottom_nav_local"
+            hyman:text="目的地"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" >
+        </com.smxcwz.qiongyou.view.ChengeColorIconWithText>
+
+        <com.smxcwz.qiongyou.view.ChengeColorIconWithText
+            android:id="@+id/tabNva_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            hyman:icon="@drawable/ic_bottom_nav_mine"
+            hyman:text="我"
+            hyman:text_size="12sp"
+            hyman:color="#ff45c01a" >
+        </com.smxcwz.qiongyou.view.ChengeColorIconWithText>
+    </LinearLayout>
+
+</LinearLayout>

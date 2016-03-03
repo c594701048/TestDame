@@ -1,0 +1,436 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.smxcwz.qiongyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- slide -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.smxcwz.qiongyou.cycleview.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <com.smxcwz.qiongyou.view.IconAndTextView
+                    android:id="@+id/iconAndText_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    hyman:icon="@drawable/ic_home_jinnang_normal"
+                    hyman:text="看锦囊"
+                    hyman:text_size="14sp"
+                    hyman:color="#ff45c01a" >
+                </com.smxcwz.qiongyou.view.IconAndTextView>
+
+                <com.smxcwz.qiongyou.view.IconAndTextView
+                    android:id="@+id/iconAndText_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    hyman:icon="@drawable/ic_home_sale_normal"
+                    hyman:text="抢折扣"
+                    hyman:text_size="14sp"
+                    hyman:color="#ff45c01a" >
+                </com.smxcwz.qiongyou.view.IconAndTextView>
+
+                <com.smxcwz.qiongyou.view.IconAndTextView
+                    android:id="@+id/iconAndText_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    hyman:icon="@drawable/ic_home_hotel_normal"
+                    hyman:text="订酒店"
+                    hyman:text_size="14sp"
+                    hyman:color="#ff45c01a" >
+                </com.smxcwz.qiongyou.view.IconAndTextView>
+                <!-- iconTab -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/iconAndText_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@anim/way_animation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在途中"
+                        android:textColor="#ff808080"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 图片文字展示 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="发现下一站"
+                    android:textColor="#ff808080"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img01_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:padding="5dp"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/img02_find"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img03_find"
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_moreFind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="查看全部 "
+                    android:textColor="#ff45c01a"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 强特价折扣 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="抢特价折扣"
+                    android:textColor="#ff808080"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img01_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img02_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/img02_text_discounTtilt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img02_discount"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:paddingTop="5dp"
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/img02_text_discounNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img02_text_discounTtilt"
+                            android:paddingTop="5dp"
+                            android:textColor="#FE7866"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/img02_text_discounPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/img02_text_discounNum"
+                            android:layout_alignBottom="@+id/img02_text_discounNum"
+                            android:layout_toLeftOf="@+id/img02_textYuan"
+                            android:textColor="#FE7866"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/img02_textYuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img02_text_discounPrice"
+                            android:layout_alignParentRight="true"
+                            android:text="元起"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img03_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/img03_text_discounTtilt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img03_discount"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:paddingTop="5dp"
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/img03_text_discounNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img03_text_discounTtilt"
+                            android:paddingTop="5dp"
+                            android:textColor="#FE7866"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/img03_text_discounPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/img03_text_discounNum"
+                            android:layout_alignBottom="@id/img03_text_discounNum"
+                            android:layout_toLeftOf="@+id/img03_textYuan"
+                            android:textColor="#FE7866"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/img03_textYuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img03_text_discounPrice"
+                            android:layout_alignParentRight="true"
+                            android:text="元起"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img04_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/img04_text_discounTtilt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img04_discount"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:paddingTop="5dp"
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/img04_text_discounNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img04_text_discounTtilt"
+                            android:paddingTop="5dp"
+                            android:textColor="#FE7866"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/img04_text_discounPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/img04_text_discounNum"
+                            android:layout_alignBottom="@+id/img04_text_discounNum"
+                            android:layout_toLeftOf="@+id/img04_textYuan"
+                            android:textColor="#FE7866"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/img04_textYuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img04_text_discounPrice"
+                            android:layout_alignParentRight="true"
+                            android:text="元起"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img05_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/img05_text_discounTtilt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img05_discount"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:paddingTop="5dp"
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/img05_text_discounNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img05_text_discounTtilt"
+                            android:paddingTop="5dp"
+                            android:textColor="#FE7866"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/img05_text_discounPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/img05_text_discounNum"
+                            android:layout_alignBottom="@id/img05_text_discounNum"
+                            android:layout_toLeftOf="@+id/img05_textYuan"
+                            android:textColor="#FE7866"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/img05_textYuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img05_text_discounPrice"
+                            android:layout_alignParentRight="true"
+                            android:text="元起"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/more_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="查看全部 "
+                    android:textColor="#ff45c01a"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
